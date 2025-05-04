@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Database18DataSet" targetNamespace="http://tempuri.org/Database18DataSet.xsd" xmlns:mstns="http://tempuri.org/Database18DataSet.xsd" xmlns="http://tempuri.org/Database18DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database18ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database18ConnectionString (Settings)" PropertyReference="ApplicationSettings.WindowsFormsApplication2.Properties.Settings.GlobalReference.Default.Database18ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="phonesTableAdapter" GeneratorDataComponentClassName="phonesTableAdapter" Name="phones" UserDataComponentName="phonesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database18ConnectionString (Settings)" DbObjectName="phones" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Names], PhoneNumber FROM phones</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Names" DataSetColumn="Names" />
+              <Mapping SourceColumn="PhoneNumber" DataSetColumn="PhoneNumber" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Database18DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database18DataSet" msprop:Generator_UserDSName="Database18DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="phones" msprop:Generator_TableClassName="phonesDataTable" msprop:Generator_TableVarName="tablephones" msprop:Generator_TablePropName="phones" msprop:Generator_RowDeletingName="phonesRowDeleting" msprop:Generator_RowChangingName="phonesRowChanging" msprop:Generator_RowEvHandlerName="phonesRowChangeEventHandler" msprop:Generator_RowDeletedName="phonesRowDeleted" msprop:Generator_UserTableName="phones" msprop:Generator_RowChangedName="phonesRowChanged" msprop:Generator_RowEvArgName="phonesRowChangeEvent" msprop:Generator_RowClassName="phonesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Names" msprop:Generator_ColumnVarNameInTable="columnNames" msprop:Generator_ColumnPropNameInRow="Names" msprop:Generator_ColumnPropNameInTable="NamesColumn" msprop:Generator_UserColumnName="Names" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PhoneNumber" msprop:Generator_ColumnVarNameInTable="columnPhoneNumber" msprop:Generator_ColumnPropNameInRow="PhoneNumber" msprop:Generator_ColumnPropNameInTable="PhoneNumberColumn" msprop:Generator_UserColumnName="PhoneNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
